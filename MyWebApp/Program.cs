@@ -30,7 +30,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
-System.Console.WriteLine("👉 Version B");
+Console.WriteLine("👉 Version B");
 // Middleware för att skriva ut URL:er efter att app.Run() anropats
 app.Lifetime.ApplicationStarted.Register(() =>
 {

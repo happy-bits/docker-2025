@@ -1,3 +1,4 @@
+
 -- Drop database if exists
 DROP DATABASE IF EXISTS mydbname;
 
