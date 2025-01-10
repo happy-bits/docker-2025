@@ -2,9 +2,9 @@
 FROM postgres:latest
 
 # Sätt miljövariabler
-ENV POSTGRES_USER=myuser
-ENV POSTGRES_PASSWORD=mypassword
-ENV POSTGRES_DB=mydbname
+ENV POSTGRES_USER=username
+ENV POSTGRES_PASSWORD=strong_password
+ENV POSTGRES_DB=product_database
 
 # Specifiera arbetskatalogen (valfritt)
 WORKDIR /var/lib/postgresql/data
