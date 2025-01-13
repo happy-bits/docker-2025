@@ -23,6 +23,12 @@ services:
       POSTGRES_DB: postgres
     volumes:
       - postgres-data:/var/lib/postgresql/data
+
+      # Postgres kör automatiskt all .sql-filer som finns i denna mapp när containern startas första gången
+      # Körs bara när containern är tom
+      # De körs i alfabetisk ordning
+      - ./reset-database.sql:/docker-entrypoint-initdb.d/1_reset-database.sql
+      - ./migrations.sql:/docker-entrypoint-initdb.d/2_migrations.sql
     ports:
       - "5432:5432"
     container_name: db
