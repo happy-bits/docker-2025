@@ -1,0 +1,1 @@
+dotnet ef migrations script --project "./MyWebApp/MyWebApp.csproj" -o "./Database/migrations.sql"

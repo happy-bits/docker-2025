@@ -15,5 +15,7 @@ Du når sidan på http://localhost:1234
 
 Om databasscripten inte är i synk så uppdatera dem genom att köra
 
-    dotnet ef migrations script -o migrations.sql
+    .\run-migrations.ps1
+
+Då uppdateras migrations.sql i Database-mappen.
 
