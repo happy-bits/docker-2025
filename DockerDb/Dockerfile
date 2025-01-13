@@ -2,9 +2,10 @@
 FROM postgres:latest
 
 # Sätt miljövariabler
-ENV POSTGRES_USER=username
+# Skapar en admin med namnet "postgres" och med systemdatabasen "postgres" (detta är default)
+ENV POSTGRES_USER=postgres
 ENV POSTGRES_PASSWORD=strong_password
-ENV POSTGRES_DB=product_database
+ENV POSTGRES_DB=postgres
 
 # Specifiera arbetskatalogen (valfritt)
 WORKDIR /var/lib/postgresql/data

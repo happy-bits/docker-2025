@@ -1,3 +1,4 @@
+\c postgres
 
 -- Drop database if exists
 DROP DATABASE IF EXISTS product_database;
